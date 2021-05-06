@@ -1,2 +1,2 @@
-# cs547-CTR-prediction
+# CTR-prediction
 cs547 final project
