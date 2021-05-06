@@ -1,2 +1,2 @@
-<head>CTR-prediction</head>
+# CTR-prediction
 cs547 final project
