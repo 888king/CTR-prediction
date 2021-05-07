@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+# Introduction
+
+Display advertising can give the company much more benifit. Modern advertising recommendation mechanism predict the users' behavior by predicting advertisement Click-Through Rate (CTR). By giving a user and the page he is visiting, the algorithm will come with the probability that he will click on the given advertisement. The algorithm would make a huge profit to the companies by doing this.
+
+The algorithm would help the company to meet the users' needs and make the functions efficient. For those multi-media companies like YouTube and Tiktok, it would help them put the related advertisement into specific videos which would increase the possibilty the user clicks on the advertisement and buys the related products. For those online shopping websites like Amazon and eBay, the algorithm can also be used to recommend related items based on the items the user is browsing. By using the algorithm, the user would get a better user experience in using the product which would bring more possibility for the sellers to sell their products and offer their services.
+
+The project is a recommendation model, even though we are predicting CTR. We would like to show the potential users the advertisements have higher probability to be clicked. It is the recommender system which is considered one among the most powerful tools in the present digital world. In the field of recommender systems there are various methods and approaches which have been implemented. We use DeepFM as our benchmark and try to make some improvements.
+
+
+# DataSet
+
+We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge) dataset. The Criteo dataset is a well-know public dataset to benchmark the most accurate algorithms for CTR estimation. 
+
+The Criteo Dataset is a public dataset with the following data fields:
+* Label : Target variable that indicates if an ad was clicked (1) or not (0).
+* L1-L13 : A total of 13 columns of integer features (mostly count features).
+* C1-C26 : A total of 26 columns of categorical features. The values of these features have been hashed onto 32 bits for anonymization purposes. 
+
+# Algorithms Detail
+## Benchmark
+### DeepFM
+
+Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead of LR (logistic Regression) in the wide part and use concatenation of embadding vectors as the input of MLP (Multilayer Perceptron) in the deep part. DeepFM get over the need of feature engineering besides raw features and realized an end-to-end model with learning in both low and high order feature interactions. DeepFM trains a deep component and an FM component jointly. It does not need pre-training and introduces a sharing strategy of feature embedding to avoid feature engineering. Based on these, DeepFM gains a performance improvement with a lot of advantages.
+
+![DeepFM](https://user-images.githubusercontent.com/49369552/117379697-9c322d80-af0a-11eb-97fd-413983fa283b.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
+
+## Improvements
+
+### 1.	Replace FM layer with LR layer
+
+
+
+## AFM (Attentional Factorization Machine)
+### Model Structure
+
+Attentional Factorization Machine (AFM) is a variant of FM. Traditional FM sums the inner product of embedding vector uniformly. AFM can be seen as weighted sum of feature interactions. The weight is learned by a small MLP.
+
+![AFM](https://user-images.githubusercontent.com/49369552/117373856-a4846b80-aefe-11eb-9b8a-f9244c2541c6.png)
+
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
