@@ -13,9 +13,10 @@ The project is a recommendation model, even though we are predicting CTR. We wou
 
 # DataSet
 
-We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge) dataset. The Criteo dataset is a well-know public dataset to benchmark the most accurate algorithms for CTR estimation. 
+We train and evaluate our model based on the [Criteo](https://www.kaggle.com/c/criteo-display-ad-challenge) dataset. Criteo is a famous advertising company and in the top level of this industry. It has 31 offices around the world and has one of the best engines in advertisement recommendation. Criteo data set is an online advertising dataset released by Criteo Labs. It is made by the data in Criteo in 7 days and becomes a well-know public dataset to benchmark the most accurate algorithms for CTR estimation. 
 
-The Criteo Dataset is a public dataset with the following data fields:
+The Criteo Dataset is a public dataset has 40 million training samples and 5 million testing samples. It has 13 integer features and 26 categorical features and use log loss to evaluate models.
+The data fields of Criteo Dataset:
 * Label : Target variable that indicates if an ad was clicked (1) or not (0).
 * L1-L13 : A total of 13 columns of integer features (mostly count features).
 * C1-C26 : A total of 26 columns of categorical features. The values of these features have been hashed onto 32 bits for anonymization purposes. 
