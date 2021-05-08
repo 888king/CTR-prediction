@@ -30,14 +30,26 @@ Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead 
 ![DeepFM](https://user-images.githubusercontent.com/49369552/117379697-9c322d80-af0a-11eb-97fd-413983fa283b.png)
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
 
-## Improvements
+## Our Works
 
-### 1.	Replace FM layer with LR layer
+### 1.	Connect FM with MLP
 
+#### Model Structure
 
+In DeepFM, FM models feature interactions in a linear way, which can be insufficient for capturing the non-linear and complex inherent structure of real-world data. To improve that, we try to combines the linearity of FM in modelling second-order feature interactions and the non-linearity of neural network in modelling higher-order feature interactions. We feed the 2 order feature interactions modeled by FM to MLP, and only keep the LR part on the left.
 
-## AFM (Attentional Factorization Machine)
-### Model Structure
+![](D:\study\WPI\CS547\hw\cs547-CTR-prediction\images\NFM.png)
+
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of NFM </center> 
+
+#### compare with DeepFM
+
+![](D:\study\WPI\CS547\hw\cs547-CTR-prediction\images\NFM vs DeepFM.png)
+
+We compare the AUC on testing dataset of both models. From the plot we can see that NFM is slightly better than DeepFM.
+
+### 2.	Attentional Factorization
+#### Model Structure
 
 Attentional Factorization Machine (AFM) is a variant of FM. Traditional FM sums the inner product of embedding vector uniformly. AFM can be seen as weighted sum of feature interactions. The weight is learned by a small MLP.
 
