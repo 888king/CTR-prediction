@@ -38,13 +38,13 @@ Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead 
 
 In DeepFM, FM models feature interactions in a linear way, which can be insufficient for capturing the non-linear and complex inherent structure of real-world data. To improve that, we try to combines the linearity of FM in modelling second-order feature interactions and the non-linearity of neural network in modelling higher-order feature interactions. We feed the 2 order feature interactions modeled by FM to MLP, and only keep the LR part on the left.
 
-![](D:\study\WPI\CS547\hw\cs547-CTR-prediction\images\NFM.png)
+![](.\images\NFM.png)
 
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of NFM </center> 
 
 #### compare with DeepFM
 
-![](D:\study\WPI\CS547\hw\cs547-CTR-prediction\images\NFM vs DeepFM.png)
+![](.\images\NFM vs DeepFM.png)
 
 We compare the AUC on testing dataset of both models. From the plot we can see that NFM is slightly better than DeepFM.
 
