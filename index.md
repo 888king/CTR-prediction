@@ -53,6 +53,12 @@ We compare the AUC on testing dataset of both models. From the plot we can see t
 
 AFM improves FM by discriminating the importance of different feature interactions. AFM learns the importance of each feature interaction from data via a neural attention network. The attention mechanism enables feature interactions to contribute differently to the prediction.
 
+![AFM](https://user-images.githubusercontent.com/49369552/117581236-679ebb80-b12e-11eb-8ea7-2edbe801383d.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
+
+![DNN](https://user-images.githubusercontent.com/49369552/117581252-784f3180-b12e-11eb-8924-324ac91df4d3.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DNN </center> 
+
 #### Improvement
 
 To further improve the AFM, we try to combine deep neural network with afm to enhance the capability for high order interactions between features. Like deepFM, the AFM parts and DNN parts have a share input and trained jointly for the combined prediction model in our approach.
