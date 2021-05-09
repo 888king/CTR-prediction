@@ -42,7 +42,7 @@ In DeepFM, FM models feature interactions in a linear way, which can be insuffic
 
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of NFM </center> 
 
-#### compare with DeepFM
+#### Compare with DeepFM
 
 ![](.\images\NFM vs DeepFM.png)
 
@@ -53,7 +53,7 @@ We compare the AUC on testing dataset of both models. From the plot we can see t
 
 AFM improves FM by discriminating the importance of different feature interactions. AFM learns the importance of each feature interaction from data via a neural attention network. The attention mechanism enables feature interactions to contribute differently to the prediction.
 
-#### improvement
+#### Improvement
 
 To further improve the AFM, we try to combine deep neural network with afm to enhance the capability for high order interactions between features. Like deepFM, the AFM parts and DNN parts have a share input and trained jointly for the combined prediction model in our approach.
 
