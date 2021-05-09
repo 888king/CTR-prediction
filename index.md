@@ -48,11 +48,12 @@ In DeepFM, FM models feature interactions in a linear way, which can be insuffic
 
 We compare the AUC on testing dataset of both models. From the plot we can see that NFM is slightly better than DeepFM.
 
-### 2.	Attentional Factorization
+### 2.	Attentional Factorization Machine + Deep Neural Network
 #### Model Structure
 
-Attentional Factorization Machine (AFM) is a variant of FM. Traditional FM sums the inner product of embedding vector uniformly. AFM can be seen as weighted sum of feature interactions. The weight is learned by a small MLP.
+AFM improves FM by discriminating the importance of different feature interactions. AFM learns the importance of each feature interaction from data via a neural attention network. The attention mechanism enables feature interactions to contribute differently to the prediction.
 
-![AFM](https://user-images.githubusercontent.com/49369552/117373856-a4846b80-aefe-11eb-9b8a-f9244c2541c6.png)
+#### improvement
 
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
+To further improve the AFM, we try to combine deep neural network with afm to enhance the capability for high order interactions between features. Like deepFM, the AFM parts and DNN parts have a share input and trained jointly for the combined prediction model in our approach.
+
