@@ -28,7 +28,7 @@ The data fields of Criteo Dataset:
 Compaing to Wide & Deep Learning, DeepFM use FM (Factorization Machine) instead of LR (logistic Regression) in the wide part and use concatenation of embadding vectors as the input of MLP (Multilayer Perceptron) in the deep part. DeepFM get over the need of feature engineering besides raw features and realized an end-to-end model with learning in both low and high order feature interactions. DeepFM trains a deep component and an FM component jointly. It does not need pre-training and introduces a sharing strategy of feature embedding to avoid feature engineering. Based on these, DeepFM gains a performance improvement with a lot of advantages.
 
 ![DeepFM](https://user-images.githubusercontent.com/49369552/117379697-9c322d80-af0a-11eb-97fd-413983fa283b.png)
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DeepFM </center> 
+<center style="font-size:14px;color:#778899;text-decoration:underline"> The architecture of DeepFM </center> 
 
 ## Our Works
 
@@ -40,7 +40,7 @@ In DeepFM, FM models feature interactions in a linear way, which can be insuffic
 
 ![](.\images\NFM.png)
 
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of NFM </center> 
+<center style="font-size:14px;color:#778899;text-decoration:underline"> The architecture of NFM </center> 
 
 #### Compare with DeepFM
 
