@@ -56,7 +56,7 @@ AFM improves FM by discriminating the importance of different feature interactio
 ![AFM](https://user-images.githubusercontent.com/49369552/117581236-679ebb80-b12e-11eb-8ea7-2edbe801383d.png)
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of AFM </center> 
 
-![DNN](https://user-images.githubusercontent.com/49369552/117581252-784f3180-b12e-11eb-8924-324ac91df4d3.png)
+![DNN](https://user-images.githubusercontent.com/49369552/117581285-a765a300-b12e-11eb-9534-00940b82cb15.png)
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of DNN </center> 
 
 #### Improvement
