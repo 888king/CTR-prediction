@@ -20,8 +20,4 @@ The following command downloads all days:
 
  ## Website
 
-We show our results at 
-
-[here]: https://888king.github.io/CTR-prediction/
-
-.
+We show our results at [here](https://888king.github.io/CTR-prediction/).
