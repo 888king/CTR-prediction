@@ -46,7 +46,7 @@ In DeepFM, FM models feature interactions in a linear way, which can be insuffic
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline"> The architecture of NFM </center> 
 
 #### compare with DeepFM
-![](.\images\NFM vs DeepFM.png)
+![](.\images\NFM-DeepFM.png)
 
 We compare the AUC on testing dataset of both models. From the plot we can see that NFM is slightly better than DeepFM.
 
@@ -65,6 +65,6 @@ To further improve the AFM, we try to combine deep neural network with afm to en
 
 #### compare with DeepFM
 
-![](.\images\AFM vs DeepFM.png)
+![](.\images\AFM-DeepFM.png)
 
 We compare the AUC on testing dataset of both models. From the plot we can see that AFM+DNN is slightly better than DeepFM.
